@@ -3,6 +3,7 @@ import cn from 'classnames';
 import s from './styles.module.scss';
 
 import hero__img from '../../../assets/desktop/desktop_img.jpg';
+import arrow from '../../../assets/arrow.svg';
 
 
 export const HeroSection = () => {
@@ -16,7 +17,10 @@ export const HeroSection = () => {
         <div className={cn(s.hero__text, s.hero__text_2)}>Are you ready to&nbsp;turn your passion for technology into a&nbsp;thriving career?</div>
         <div className={s.input__container}>
           <input type={'email'} placeholder={'Email'} className={s.input__email}/>
-          <button className={s.btn}>Join <span>→</span></button>
+          <button className={s.btn}>
+            <div className={s.btn__text}>Join</div>
+            <img src={arrow} alt={'arrow right'}/>
+          </button>
         </div>
       </div>
     </div>
