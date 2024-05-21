@@ -57,7 +57,7 @@ $accent-color: #F8D57E;
 // typescale-mobile
 
 @mixin fontH1mobile() {
-  @include font-face-inter(22px, 400, 1.571rem);
+  @include font-face-inter(22px, 600, 1.571rem);
   letter-spacing: 0.02em;
 }
 
@@ -77,7 +77,7 @@ $accent-color: #F8D57E;
 }
 
 @mixin fontB1mobile() {
-  @include font-face-inter(14px, 400, 1.0rem);
+  @include font-face-inter(14px, 400, 1.5rem);
   letter-spacing: 0;
 }
 

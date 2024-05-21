@@ -21,7 +21,7 @@ export const CardProduct = ({color, title, text, ...props}) => {
         <div className={s.card__color} style={{ backgroundColor: color }}></div>
         <div className={s.card__info}>
           <div className={s.card__info_title}>{title}</div>
-          <div className={s.card__info_text}>{text}</div>
+          <div className={cn(s.card__info_text)}>{text}</div>
         </div>
         <a 
           className={s.card__link} 

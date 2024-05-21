@@ -26,6 +26,29 @@
       @include fontB1mobile;
     }
   }
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; // Добавлено для скругления углов изображения
+  }
+  
+  @media (max-width: 600px) {
+    &__block {
+      width: 85%;
+    }
+    &__img {
+      content: url('../../../assets/mobile/mobile_img.jpg'); // Замена изображения
+    }
+    &__title {
+      @include fontH1mobile;
+    }
+    &__text {
+      color: $text-secondary-color;
+      &_1 {
+        @include fontB1mobile;
+      }
+    }
+  }
 }
 
 .input {
@@ -47,6 +70,17 @@
       color: $text-primary-color;
     }
   }
+  @media (max-width: 600px) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__email {
+      width: 240px;
+      margin-right: 0;
+      }
+    }
 }
 
 .btn {
@@ -62,9 +96,16 @@
   align-items: center;
   justify-content: center;
   &__text {
+    @include fontB2;
     padding-right: 8px;
   }
   &:hover {
     background-color: $cta-hover-color;
+  }
+  @media (max-width: 600px) {
+    width: 272px;
+    &__text {
+      @include fontB2;
+    }
   }
 }

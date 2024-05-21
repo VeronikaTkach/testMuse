@@ -3,6 +3,7 @@ import cn from 'classnames';
 import s from './styles.module.scss';
 
 import hero__img from '../../../assets/desktop/desktop_img.jpg';
+import hero__img_small from '../../../assets/mobile/mobile_img.jpg';
 import arrow from '../../../assets/arrow.svg';
 
 
