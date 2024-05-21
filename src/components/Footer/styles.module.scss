@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -5,7 +7,10 @@
   gap: 24px;
   padding-bottom: 32px;
   &__link {
-    font-size: 13px;
-    font-weight: 400;
+    @include fontB3;
+    color: $cta-color;
+    &:hover {
+      color: $cta-hover-color;
+    }
   }
 }

@@ -1,0 +1,92 @@
+// colors
+
+$text-primary-color: #252323;
+$text-secondary-color: #4B4B4B;
+$divider-color: #D8D8D8;
+$bg-color: #EEF0F2;
+$cta-color: #3366FF;
+$cta-hover-color: #2B57D9;
+$accent-color: #F8D57E;
+
+
+@mixin font-face-inter($font-size, $font-weight, $line-height) {
+  font-family: 'Inter', sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// typescale-desktop
+
+@mixin fontH1() {
+  @include font-face-inter(26px, 600, 1.625rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH2() {
+  @include font-face-inter(23px, 400, 1.438rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH3() {
+  @include font-face-inter(20px, 400, 1.25rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH4() {
+  @include font-face-inter(18px, 600, 1.125rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontB1() {
+  @include font-face-inter(16px, 400, 1.5rem);
+  letter-spacing: 0;
+}
+
+@mixin fontB2() {
+  @include font-face-inter(14px, 400, 0.875rem);
+  letter-spacing: 0;
+}
+
+@mixin fontB3() {
+  @include font-face-inter(13px, 400, 0.812rem);
+  letter-spacing: 0;
+}
+
+
+// typescale-mobile
+
+@mixin fontH1mobile() {
+  @include font-face-inter(22px, 400, 1.571rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH2mobile() {
+  @include font-face-inter(20px, 400, 1.429rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH3mobile() {
+  @include font-face-inter(18px, 400, 1.286rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontH4mobile() {
+  @include font-face-inter(16px, 400, 1.143rem);
+  letter-spacing: 0.02em;
+}
+
+@mixin fontB1mobile() {
+  @include font-face-inter(14px, 400, 1.0rem);
+  letter-spacing: 0;
+}
+
+@mixin fontB2mobile() {
+  @include font-face-inter(12px, 400, 0.857rem);
+  letter-spacing: 0;
+}
+
+@mixin fontB3mobile() {
+  @include font-face-inter(11px, 400, 0.786rem);
+  letter-spacing: 0;
+}

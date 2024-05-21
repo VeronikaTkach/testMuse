@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -12,21 +14,16 @@
     gap: 24px;
   }
   &__title {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    color: rgba(37, 35, 35, 1);
+    @include fontH1;
+    color: $text-primary-color;
   }
   &__text {
-    font-weight: 400;
-    color: rgba(75, 75, 75, 1);
-    &__1 {
-      font-size: 16px;
-      line-height: 24px;
+    color: $text-secondary-color;
+    &_1 {
+      @include fontB1;
     }
-    &__2 {
-      font-size: 14px;
-      line-height: 21px;
+    &_2 {
+      @include fontB1mobile;
     }
   }
 }
@@ -41,12 +38,14 @@
     width: 296px;
     height: 45px;
     padding: 0 15px;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #C0C0C0;
     border-radius: 10px;
     outline: none;
-    font-size: 16px;
-    border-right: none;
     margin-right: 10px;
+    &::placeholder {
+      @include fontB2;
+      color: $text-primary-color;
+    }
   }
 }
 

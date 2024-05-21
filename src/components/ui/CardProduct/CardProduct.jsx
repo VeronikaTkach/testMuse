@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import cn from 'classnames';
 import s from './styles.module.scss';
 
 import arrowToLink from '../../../assets/arrowToLink.svg';
+import arrowToLinkHover from '../../../assets/arrowToLinkHover.svg';
 
 const titles = [
   {color: "rgb(255, 200, 0)", title: "Ultimate Guitar", text: "The best platform for music makers to play songs they love. Home to the world's largest music community.", },
@@ -13,6 +14,7 @@ const titles = [
 ];
 
 export const CardProduct = ({color, title, text, ...props}) => {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className={s.card}>
@@ -21,9 +23,17 @@ export const CardProduct = ({color, title, text, ...props}) => {
           <div className={s.card__info_title}>{title}</div>
           <div className={s.card__info_text}>{text}</div>
         </div>
-        <a className={s.card__link} href="/">
+        <a 
+          className={s.card__link} 
+          href="/"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <div className={s.card__link__text}>Read more</div>
-          <img src={arrowToLink} alt={'arrow to link'}/>
+          <img 
+            src={isHovered ? arrowToLinkHover : arrowToLink} 
+            alt={'arrow to link'} 
+          />
         </a>
     </div>
   )

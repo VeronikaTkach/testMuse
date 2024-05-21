@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .card {
   width: 314px;
   height: 340px;
@@ -10,21 +12,21 @@
   &__color {
     width: 314px;
     height: 159px;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
   }
   &__info {
     padding: 16px 16px 13px 16px;
     text-align: start;
     flex-grow: 1;
     &_title {
+      @include fontH4;
       padding-bottom: 8px;
-      font-size: 18px;
-      font-weight: 600;
-      color: #252323;
+      color: $text-primary-color;
     }
     &_text {
-      font-size: 16px;
-      font-weight: 400;
-      color: #4B4B4B;
+      @include fontB1;
+      color: $text-secondary-color;
     }
   }
   &__link {
@@ -34,5 +36,9 @@
     padding: 0 204px 16px 16px;
     margin-top: auto;
     font-size: 14px;
+    color: $cta-color;
+    &:hover {
+      color: $cta-hover-color;
+    }
   }
 }
