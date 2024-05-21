@@ -8,4 +8,9 @@
     font-size: 26px;
     font-weight: 600;
   }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 }
