@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 32px;
+  &__link {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

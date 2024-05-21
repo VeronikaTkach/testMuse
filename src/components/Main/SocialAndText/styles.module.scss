@@ -1,5 +1,19 @@
 .social {
-  width: 640px;
-  height: 132px;
-  &__
+  max-width: 640px;
+  // height: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 32px;
+  &__media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
