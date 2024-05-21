@@ -8,6 +8,16 @@ import arrow from '../../../assets/arrow.svg';
 
 export const HeroSection = () => {
 
+  const handleJoinClick = () => {
+    alert("Welcome to the team!");
+  }
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleJoinClick();
+    }
+  }
+
   return (
     <div className={s.hero}>
       <div className={s.hero__block}>
@@ -16,8 +26,8 @@ export const HeroSection = () => {
         <img className={s.hero__img} src={hero__img} alt={'Guy with a guitar'}/>
         <div className={cn(s.hero__text, s.hero__text_2)}>Are you ready to&nbsp;turn your passion for technology into a&nbsp;thriving career?</div>
         <div className={s.input__container}>
-          <input type={'email'} placeholder={'Email'} className={s.input__email}/>
-          <button className={s.btn}>
+          <input type={'email'} placeholder={'Email'} className={s.input__email} onKeyDown={handleKeyPress} />
+          <button className={s.btn} onClick={handleJoinClick}>
             <div className={s.btn__text}>Join</div>
             <img src={arrow} alt={'arrow right'}/>
           </button>
