@@ -10,6 +10,7 @@
   &__block {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 640px;
     gap: 24px;
   }
@@ -29,7 +30,7 @@
   &__img {
     width: 100%;
     height: auto;
-    border-radius: 10px; // Добавлено для скругления углов изображения
+    border-radius: 10px;
   }
   
   @media (max-width: 600px) {
@@ -37,7 +38,7 @@
       width: 85%;
     }
     &__img {
-      content: url('../../../assets/mobile/mobile_img.jpg'); // Замена изображения
+      content: url('../../../assets/mobile/mobile_img.jpg');
     }
     &__title {
       @include fontH1mobile;

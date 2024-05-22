@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroSection } from './HeroSection';
 import { Products } from './Products';
 import { SocialAndText } from "./SocialAndText/SocialAndText";
