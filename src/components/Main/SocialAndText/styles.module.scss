@@ -19,4 +19,9 @@
     line-height: 150%;
     color: $text-secondary-color;
   }
+  @media (max-width: 600px) {
+    &__media {
+      gap: 40px;
+    }
+  }
 }

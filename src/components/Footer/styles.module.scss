@@ -16,5 +16,9 @@
 }
 
 @media (max-width: 600px) {
-  
+  .footer {
+    &__link {
+      @include fontB3mobile;
+    }
+  }
 }
